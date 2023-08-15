@@ -1,0 +1,228 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(255, 240, 245);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+    width: 100%;
+}
+
+.menu-title {
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+.container {
+    /* margin-top: 15%; / /*mid of page/
+    /* position: relative; */
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.item {
+
+    background-color: gray;
+    position: relative;
+    top: 0;
+    padding: 25px;
+    border: 3px solid #000;
+}
+
+.item:hover {
+    background-color: rgba(133, 3, 3, 0.493);
+
+}
+
+.items {
+    cursor: grab;
+}
+
+
+.item p {
+    margin-bottom: 10px;
+    margin-top: 18px;
+    text-align: justify;
+    font-size: 100%;
+}
+
+.item-title {
+    border-radius: 10%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 6px 90px;
+    border-left: 2px solid #000;
+    border-bottom: 2px solid #000;
+}
+
+#title-1 {
+    background-color: rgb(243, 34, 212);
+}
+
+#title-2 {
+    background-color: rgb(255, 5, 84);
+}
+
+#title-3 {
+    background-color: rgb(247, 231, 16);
+}
+
+#jd1,
+#jd2,
+#jd3 {
+    border-radius: 10%;
+    display: inline-block;
+    background-color: rgb(243, 34, 212);
+    padding: 6px 20px;
+
+    margin: 20px 10px 0 5px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+
+@media (min-width: 1200px) {
+
+    .col-lg-1,
+    .col-lg-2,
+    .col-lg-3,
+    .col-lg-4,
+    .col-lg-5,
+    .col-lg-6,
+    .col-lg-7,
+    .col-lg-8,
+    .col-lg-9,
+    .col-lg-10,
+    .col-lg-11,
+    .col-lg-12 {
+        float: left;
+    }
+
+    .col-lg-1 {
+        width: 8.33%;
+    }
+
+    .col-lg-2 {
+        width: 16.66%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.33%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    .col-lg-8 {
+        width: 66.66%;
+    }
+
+    .col-lg-9 {
+        width: 74.99%;
+    }
+
+    .col-lg-10 {
+        width: 83.33%;
+    }
+
+    .col-lg-11 {
+        width: 91.66%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+}
+
+/* Add your existing styles here */
+
+/* Style for the items */
+.item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+    transition: background-color 0.3s;
+}
+
+.item:hover {
+    background-color: #f0f0f0;
+}
+
+/* Style for the item title */
+.item-title {
+    background-color: #333;
+    color: #fff;
+    padding: 8px 15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+/* Style for the price */
+.jd {
+    background-color: #f05a28;
+    color: #fff;
+    padding: 6px 12px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+/* Add media queries for responsiveness if needed */
+
+/* Additional styles for different sections */
+#title-1 {
+    background-color: #f05a28;
+}
+
+#title-2 {
+    background-color: #009688;
+}
+
+#title-3 {
+    background-color: #9c27b0;
+}
+
+@media (min-width: 850px) and (max-width: 1199px) {
+    .col-lg-4 {
+        width: 50%;
+        float: left;
+    }
+
+    .col-lg-tablet {
+        width: 100%;
+        float: left;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 849px) {
+    .col-lg-4 {
+        margin: 1.5%;
+        width: 90%;
+        float: left;
+    }
+}
